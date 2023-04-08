@@ -1,7 +1,7 @@
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
-const apiKey = "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";
+const apiKey = "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";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
     "https://api.openai.com/v1/completions",
     {
       prompt: message,
-      model: "gpt-3.5-turbo",
+      model: "text-davinci-003",
       temperature: 0,
       max_tokens: 1000,
       top_p: 1,

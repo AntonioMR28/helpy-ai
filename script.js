@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
     "https://api.openai.com/v1/completions",
     {
       prompt: message,
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       temperature: 0,
       max_tokens: 1000,
       top_p: 1,
